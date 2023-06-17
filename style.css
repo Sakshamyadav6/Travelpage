@@ -138,8 +138,7 @@ button {
 button:hover {
   background: transparent;
 }
-.social {
-}
+/* .social {  }*/
 .fa-brands {
   padding: 20px;
   font-size: 30px;
@@ -166,4 +165,11 @@ button:hover {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+.image-section {
+    margin:10px 450px;
+    cursor: pointer;
+}
+.image-section:hover{
+    opacity: 0.7;
 }
