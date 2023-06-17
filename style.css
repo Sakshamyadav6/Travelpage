@@ -147,15 +147,15 @@ button:hover {
   text-decoration: none;
   margin: 5px 50px;
 }
-.fa-brands:hover{
-    opacity: 0.7;
+.fa-brands:hover {
+  opacity: 0.7;
 }
-.fa-facebook{
-  background: #3B5998;
+.fa-facebook {
+  background: #3b5998;
   color: white;
 }
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 .fa-linkedin {
@@ -167,9 +167,20 @@ button:hover {
   color: white;
 }
 .image-section {
-    margin:10px 450px;
-    cursor: pointer;
+  margin: 10px 450px;
+  cursor: pointer;
 }
-.image-section:hover{
-    opacity: 0.7;
+.image-section:hover {
+  opacity: 0.7;
+}
+.footer-design {
+  height: 50px;
+  width: 100%;
+  background-color: #007bb5;
+}
+.footer-design h3 {
+  text-align: center;
+  padding: 14px 0;
+  color: #f0f0f0;
+  cursor: pointer;
 }
