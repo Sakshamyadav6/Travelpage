@@ -21,13 +21,14 @@
           ><img src="./public/home.svg" alt="logo" height="100px" width="50px"
         /></a>
         <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="#course-cors">Courses</a></li>
             <li><a href="">About us</a></li>
           </ul>
         </div>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" onclick="showMenu(event)" ></i>
       </nav>
       <div class="textbox">
         <h3>Hey! Welcome</h3>
@@ -203,20 +204,28 @@
               <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
-          </div>
-          <!-- Image Section -->
-          <div class="image-section">
-            <img
-              src="https://images.unsplash.com/photo-1565688256340-249dbb31f25d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1028&q=80"
-              alt="aboutus" height="350px" width="600px"
-            />
-          </div>
+        </div>
+        <!-- Image Section -->
+        <div class="image-section">
+          <img
+            src="https://images.unsplash.com/photo-1565688256340-249dbb31f25d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1028&q=80"
+            alt="aboutus"
+            height="350px"
+          />
+        </div>
       </div>
     </section>
-    <section class="footer">
-      <div class="footer-design">
-        <h3>Created by Saksham Yadav</h3>
-      </div>
-    </section>
+    <script>
+      const navlinks = document.getElementById("navlinks")
+      function hidemenu(){
+        navlinks.style.right="-200px"
+      }
+      function showMenu(){
+        navlinks.style.right= "0";
+      }
+      // function showMenu(e){
+      //   e.preventDefault();
+      // }
+    </script>
   </body>
 </html>

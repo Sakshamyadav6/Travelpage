@@ -21,6 +21,7 @@ nav {
   display: flex;
   padding: 1% 6%;
   justify-content: space-between;
+  position: relative;
 }
 nav img {
   margin-top: -20px;
@@ -52,6 +53,10 @@ nav img {
   width: 100%;
 }
 .fa-bars {
+  display: none;
+}
+.fa-times{
+  margin-top: 10px;
   display: none;
 }
 .textbox {
@@ -108,79 +113,112 @@ nav img {
   border-radius: 15px;
   margin-bottom: 14px;
 }
-.content-section {
-  background-color: blue;
-}
-.title {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: #f0f0f0;
-  letter-spacing: 2px;
-}
-.content h3,
-p {
-  text-align: center;
-  color: #f0f0f0;
-  letter-spacing: 1px;
-}
-button {
-  background-color: rgb(64, 64, 97);
-  padding: 10px 20px;
-  margin: 10px 50%;
-  border-radius: 10px;
-  border: 2px solid #f0f0f0;
-  color: #f0f0f0;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 1s;
-}
-button:hover {
-  background: transparent;
-}
-/* .social {  }*/
-.fa-brands {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 50px;
-}
-.fa-brands:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55acee;
-  color: white;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-.image-section {
-  margin: 10px 450px;
-  cursor: pointer;
-}
-.image-section:hover {
-  opacity: 0.7;
-}
-.footer-design {
-  height: 50px;
+/* About Section Starts */
+.about-section{
   width: 100%;
-  background-color: #007bb5;
+  min-height: 100vh;
+  background-color: aliceblue;
 }
-.footer-design h3 {
-  text-align: center;
-  padding: 14px 0;
+.container{
+  /* height: 50%; */
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;  
+}
+.content-section{
+  width: 40%;
+  float: left;
+}
+.content-section .title{
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.content-section .content h3{
+  margin-top: 40px;
+  font-size: 20px;
+
+}
+.content-section .content p{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.image-section{
+  width: 50%;
+  float: right;
+}
+.image-section img{
+  width: 100%;
+}
+.content-section .content .button{
+  margin-top: 26px;
+
+}
+.content-section .content .button button{
+  background-color: rgb(67, 193, 204);
+  padding: 12px 13px;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  text-decoration: none;
   color: #f0f0f0;
-  cursor: pointer;
 }
+.content-section .content .social{
+  margin-top:20px;
+}
+.content-section .content .social i{
+  color: blue;
+  font-size: 30px;
+  margin-right: 20px;
+
+}
+/* About Section Ends */
+/* Mediascreen */
+@media screen and (max-width:768px){
+  .textbox h3{
+    font-size: 25px;
+  }
+  .textbox p{
+    font-size: 12px;
+  }
+  .nav-links ul li{
+    display: block;
+    padding: 16px 0;
+  }
+  .nav-links{
+    position: absolute;
+    right: -200px;
+    top: 0;
+    background-color: aqua;
+    width: 200px;
+    height: 100vh;
+    z-index: 2;
+    text-align: center;
+    transition: 0.5s;
+
+  }
+  .fa-bars{
+    display: block;
+    cursor: pointer;
+  }
+  .fa-times{
+    display: block;
+    cursor: pointer;
+  }
+  .content-section{
+    float: none;
+    width: 100%;
+  }
+  .image-section{
+    float: none; 
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .image-section img{
+  padding: 20px 0;
+
+  }
+
+
+  
+}
+
